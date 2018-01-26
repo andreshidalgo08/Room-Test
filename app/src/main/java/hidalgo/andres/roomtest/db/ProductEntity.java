@@ -50,8 +50,7 @@ public class ProductEntity {
     public ProductEntity() {
     }
 
-    public ProductEntity(int id, String name, String description, int price) {
-        this.id = id;
+    public ProductEntity(String name, String description, int price) {
         this.name = name;
         this.description = description;
         this.price = price;
