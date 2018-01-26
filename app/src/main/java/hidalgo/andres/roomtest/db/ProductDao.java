@@ -18,6 +18,9 @@ public interface ProductDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(List<ProductEntity> products);
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    void insertProduct(ProductEntity product);
+
     @Query("SELECT * FROM products")
     List<ProductEntity> loadAllProducts();
 
